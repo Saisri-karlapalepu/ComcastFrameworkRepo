@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="2" total="3" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-17T17:09:37 IST" name="Default suite" finished-at="2025-07-17T17:11:24 IST" duration-ms="107702">
+    <groups>
+      <group name="SmokeTest">
+        <method signature="OrganiztionModule.createOrg()[pri:0, instance:createContactAndOrganizationPackage.OrganiztionModule@6c284af]" name="createOrg" class="createContactAndOrganizationPackage.OrganiztionModule"/>
+      </group> <!-- SmokeTest -->
+    </groups>
+    <test started-at="2025-07-17T17:09:37 IST" name="Default test" finished-at="2025-07-17T17:11:24 IST" duration-ms="107702">
+      <class name="createContactAndOrganizationPackage.OrganiztionModule">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:createContactAndOrganizationPackage.OrganiztionModule@6c284af]" started-at="2025-07-17T17:02:50 IST" name="configBS" finished-at="2025-07-17T17:09:37 IST" duration-ms="406313" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:createContactAndOrganizationPackage.OrganiztionModule@6c284af]" started-at="2025-07-17T17:09:37 IST" name="configBC" finished-at="2025-07-17T17:09:57 IST" duration-ms="20267" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:createContactAndOrganizationPackage.OrganiztionModule@6c284af]" started-at="2025-07-17T17:09:57 IST" name="configBM" finished-at="2025-07-17T17:10:11 IST" duration-ms="13762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createOrg()[pri:0, instance:createContactAndOrganizationPackage.OrganiztionModule@6c284af]" started-at="2025-07-17T17:10:11 IST" name="createOrg" finished-at="2025-07-17T17:10:41 IST" duration-ms="29922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createOrg -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:createContactAndOrganizationPackage.OrganiztionModule@6c284af]" started-at="2025-07-17T17:10:41 IST" name="configAM" finished-at="2025-07-17T17:11:12 IST" duration-ms="30776" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:createContactAndOrganizationPackage.OrganiztionModule@6c284af]" started-at="2025-07-17T17:11:12 IST" name="configAC" finished-at="2025-07-17T17:11:24 IST" duration-ms="12871" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:createContactAndOrganizationPackage.OrganiztionModule@6c284af]" started-at="2025-07-17T17:11:25 IST" name="configAS" finished-at="2025-07-17T17:11:34 IST" duration-ms="9300" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "java.sql.Connection.close()" because "this.conn" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "java.sql.Connection.close()" because "this.conn" is null
+at com.comcast.crm.generic.databaseUtility.DatabaseUtility.closeDbconnection(DatabaseUtility.java:24)
+at com.comcast.crm.baseclass.BaseClass.configAS(BaseClass.java:48)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:386)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAS -->
+      </class> <!-- createContactAndOrganizationPackage.OrganiztionModule -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
